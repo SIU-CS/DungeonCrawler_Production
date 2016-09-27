@@ -9,13 +9,7 @@ public abstract class GameComponent extends JPanel
 	protected BufferedImage background = null;
 	public int delay = 25;
 
-	/**
-	 * Constructs a GameComponent with a width of w, and a height of h.
-	 *
-	 * @param  w  width
-	 * @param  h  height
-	 * @see         JPanel
-	 */
+	
 	public GameComponent(int w, int h)
 	{
 		super();
@@ -94,11 +88,7 @@ public abstract class GameComponent extends JPanel
 		}
 	}
 
-	/**
-	 * Creates a {@link JFrame} that contains this GameComponent.
-	 *
-	 * @return	the {@link JFrame} created
-	 */
+	
 	public JFrame makeTestWindow()
 	{
 		JFrame frame = new JFrame();
@@ -110,12 +100,7 @@ public abstract class GameComponent extends JPanel
 		return frame;
 	}
 
-	/**
-	 * Creates a fullscreen {@link JFrame} that contains this GameComponent.
-	 * <br>*Note that the width and height of the component must be 640x480
-	 *
-	 * @return	the {@link JFrame} created
-	 */
+	
 	public JFrame makeFullScreenWindow()
 	{
 		JFrame frame = new JFrame();
@@ -142,32 +127,19 @@ public abstract class GameComponent extends JPanel
 		return frame;
 	}
 
-	/**
-	 * Preforms the standard updates of the component.(Preformed befor {@link #update()})
-	 */
+	
 	public void standardUpdates()
 	{
 	}
 
-	/**
-	 * The method that draws the component.
-	 *
-	 * @param	g 	the {@link Graphics} on which the component will be drawn
-	 */
+	
 	public abstract void draw(Graphics g);
 
-	/**
-	 * Draws the sandard parts of the component. (Preformed befor {@link #draw(Graphics)})
-	 *
-	 * @param	g 	the {@link Graphics} on which the component will be drawn
-	 */
+	
 	public void standardDraw(Graphics g)
 	{
 	}
 
-
-	/**
-	 * The method that updates the component.
-	 */
+	
 	public abstract void update();
 }

@@ -120,7 +120,7 @@ public class World
 
 		//Level 7
 		Vector<Enemy> l7e = new Vector();
-		for(int i = 0; i < 5; i ++) l7e.add(new BigAddition());
+		for(int i = 0; i < 5; i ++) l7e.add(new Addition());
 		for(int i = 0; i < 7; i ++) l7e.add(new Multiplication());
 		for(int i = 0; i < 7; i ++) l7e.add(new Subtraction());
 		for(int i = 0; i < 7; i ++) l7e.add(new Division());
@@ -128,8 +128,8 @@ public class World
 
 		//Level 8
 		Vector<Enemy> l8e = new Vector();
-		for(int i = 0; i < 5; i ++) l8e.add(new BigAddition());
-		for(int i = 0; i < 1; i ++) l8e.add(new BigMultiplication());
+		for(int i = 0; i < 5; i ++) l8e.add(new Addition());
+		for(int i = 0; i < 1; i ++) l8e.add(new Multiplication());
 		for(int i = 0; i < 7; i ++) l8e.add(new Subtraction());
 		for(int i = 0; i < 7; i ++) l8e.add(new Division());
 		Level l8 = new Level(3,1738295,l8e);

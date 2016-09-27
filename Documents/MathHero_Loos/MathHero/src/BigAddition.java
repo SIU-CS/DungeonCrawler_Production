@@ -1,4 +1,4 @@
-public class BigAddition extends Enemy
+/*public class BigAddition extends Enemy
 {
 	protected String problem;
 	protected int solution;
@@ -22,4 +22,4 @@ public class BigAddition extends Enemy
 	{
 		return solution;
 	}
-}
+}*/
