@@ -1,9 +1,10 @@
 package edu.siu.cs435;
 
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
 import org.junit.Test;
-import javax.swing.*;
+//import javax.swing.*;
+//import java.util.Random;
 
 public class ObstaclesTest {
 
@@ -12,10 +13,11 @@ public class ObstaclesTest {
     public static final int COL_COUNT = 17;
     public static final int centre = COL_COUNT/2;
     //public GameWindow gamePanel;
+    //private static final Random random = new Random();
     
     public boolean _ = false;
     public boolean X = true;
-    public boolean[][] walls = {{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
+    public boolean[][] walls = { {X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
                                  {X,_,_,_,_,_,_,_,X,_,_,_,_,_,_,_,X},
                                  {X,_,X,_,X,X,X,_,X,_,X,X,X,_,X,_,X},
                                  {X,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,X},
@@ -60,18 +62,23 @@ public class ObstaclesTest {
          						  };
 	
 	
-		
+	
+	
 	@Test
 	public void testWalls() {
 		
-		boolean wall = false;
 		
-		if(X = true) {
-	      wall = true;	
+		//if(walls[4][3]) {
+		if(walls[4][4]){
+		
+	      
+	      System.out.println("This is a Wall!!!!");
 		}
 		
-		else 
-			wall = false;
+		else {
+		
+			System.out.println("This is walk space, put any obsticle here");
+		}
 		
 	}
 	
@@ -81,13 +88,16 @@ public class ObstaclesTest {
 	@Test
 	public void testTrapDoors() {
 		
-		boolean trapDoor;
 		
-		if (o = true){
-			trapDoor = true;			
+		//if (itemmap[2][2]){
+		if(itemmap[1][1]){
+			
+			System.out.println("Trapdoor is an Option");
+			
 		}
 		else{
-			trapDoor = false;
+			
+			System.out.println("Can't put a trap door here");
 		}
 
 	}
@@ -98,18 +108,53 @@ public class ObstaclesTest {
 	@Test
 	public void testSwingBlades() {
 		
+	 
+		//if (itemmap[5][4]){		
+		if (itemmap[5][2]){
+			System.out.println("Swingblade can be planted");
+		}
+		else {
+			System.out.println("Position occupied, no swingblades");
+		}
 	}
 	
 	
-	
-	
+		
 	
 	@Test
 	public void testBombs() {
 		
+		
+		  //if (itemmap[2][2]){
+		  if(itemmap[1][1]){
+					
+					System.out.println("Can plant bomb");
+					
+				}
+				else{
+					
+					System.out.println("Can't plant bomb here!!!");
+				}
+
+		
 	}
 	
-	
+	@Test
+	public void testDisease(){
+		
+		
+		//if (itemmap[2][2]){
+		  if(itemmap[6][1]){
+					
+					System.out.println("Can catch a disease");
+					
+				}
+				else{
+					
+					System.out.println("You are safe from illness");
+				}
+		
+	}
 	
 
 }
