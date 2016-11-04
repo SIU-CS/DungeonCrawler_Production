@@ -37,6 +37,7 @@ public Attributes Zombie;
 	public void CharacterPlace(){
 		/*
 		 * Class preloads characters on the map in a default spot, the beginning of the dungeon
+		 * http://spritedatabase.net/
 		 */
 	}
 	
