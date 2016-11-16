@@ -112,7 +112,7 @@ public class GameWindow extends JFrame
     {
         public GamePanel()
         {
-            setPreferredSize(new Dimension(world.getWidth(), world.getHeight()));
+            setPreferredSize(new Dimension(world.getWidth()+500, world.getHeight()));
         }
 
         public void paintComponent(Graphics g)
@@ -123,6 +123,7 @@ public class GameWindow extends JFrame
             paintItems(g);
             paintPlayer(g);
             paintEnemys(g);
+            paintCombatScreen(g);
             if (gameOverMessage != null)
                 paintMessage(g, gameOverMessage);
         }
@@ -134,6 +135,26 @@ public class GameWindow extends JFrame
             g.fillRect(0, 0, size.width, size.height);
         }
 
+        
+        
+        private void paintCombatScreen(Graphics g)
+        {
+        	Dimension size = getSize();
+        	g.setColor(Color.blue);
+            g.drawRect(800, 100 , 300, 600);
+            
+            int hp = world.getPlayer().getHealth();
+            String message = "Player hp: " + hp;
+            g.setFont(new Font("SansSerif", Font.BOLD, 20));
+            FontMetrics fm = g.getFontMetrics();
+            int width = fm.stringWidth(message);
+            int height = fm.getAscent();
+            g.setColor(Color.blue);
+            g.drawString(message, 810, 120);
+        	
+        }
+        
+        
         private void paintWalls(Graphics g)
         {
             boolean[][] walls = world.getWalls();
@@ -229,7 +250,7 @@ public class GameWindow extends JFrame
             int height = fm.getAscent();
             Dimension size = getSize();
             g.setColor(Color.red);
-            g.drawString(message, (size.width-width)/2, (size.height-height)/2 + height);
+            g.drawString(message, ((size.width-width)/2)+325, ((size.height-height)/2)-400 + height);
         }
 
         // You may use this method to paint an energiser onto the screen.

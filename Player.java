@@ -1,4 +1,3 @@
-
 public class Player
 {
     public static final int RADIUS = World.CELL_SIZE / 2;
@@ -114,6 +113,11 @@ public class Player
     	{
     		this.die();
     	}
+    }
+    
+    public int getHealth()
+    {
+    	return hp;
     }
     
 
