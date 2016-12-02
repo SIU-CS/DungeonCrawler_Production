@@ -89,4 +89,9 @@ public class Enemy
     {
     	return isAlive;
     }
+    
+    public int getHealth()
+    {
+    	return hp;
+    }
 }

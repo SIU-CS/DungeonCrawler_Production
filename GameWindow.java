@@ -151,6 +151,15 @@ public class GameWindow extends JFrame
             int height = fm.getAscent();
             g.setColor(Color.blue);
             g.drawString(message, 810, 120);
+            
+            int ehp = world.getEnemys().getHealth();
+            String message = "Enemy hp: " + ehp;
+            g.setFont(new Font("SansSerif", Font.BOLD, 20));
+            FontMetrics fm = g.getFontMetrics();
+            int width = fm.stringWidth(message);
+            int height = fm.getAscent();
+            g.setColor(Color.blue);
+            g.drawString(message, 820, 120);
         	
         }
         
