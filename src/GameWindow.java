@@ -1,7 +1,16 @@
 import java.util.Random;
+
+import javax.imageio.ImageIO;
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class GameWindow extends JFrame
 {
@@ -16,6 +25,7 @@ public class GameWindow extends JFrame
     private GamePanel gamePanel;
     private boolean[] keyPressed = new boolean[1024];
 
+    
     public GameWindow(World world)
     {
         this.world = world;
@@ -218,6 +228,8 @@ public class GameWindow extends JFrame
             int radius = body.getRadius();
             g.setColor(Color.blue);
             g.fillOval(x-radius, y-radius, radius*2, radius*2);
+
+            
 
            /* switch (body.getDirection())
             {

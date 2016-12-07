@@ -4,7 +4,7 @@ public class Main
 {
     public static void main(String[] args)
     {
-        int floor = 90;
+        int floor = 50;
         World world = new World(floor);
         
         boolean result;

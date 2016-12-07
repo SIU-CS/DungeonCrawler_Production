@@ -16,8 +16,7 @@ public class Potion{
 	public static final int HEALTH = 1;
 	public static final int ATTACK = 2;
 	public static final int DEFENSE = 3;
-	public static final int MAGIC = 4;
-	public static final int DODGE = 5;
+
 	
 	int time = 10;
 	int effect,stat;
@@ -59,21 +58,16 @@ public class Potion{
 		}
 		
 		double x = Math.random();
-		if(x<=0.2){
+		if(x<=0.33){
 			return HEALTH;
 		}
-		else if (x<=0.4){
+		else if (x<=0.66){
 			return ATTACK;
 		}
-		else if (x<=0.6){
+		else
 			return DEFENSE;
-		}
-		else if (x<=0.8){
-			return MAGIC;
-		}
-		else{
-			return DODGE;
-		}
+		
+
 		
 		
 	}

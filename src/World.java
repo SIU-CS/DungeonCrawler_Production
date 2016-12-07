@@ -55,37 +55,126 @@ public class World
     
     
     private boolean[][] walls2 = {{X,X,X,X,X,X,X,X,X,X,X,i,X,X,X,X,X,X,X,X,X,X,X},
-            					   {X,X,X,X,X,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,X,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-            					   {X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,X,X,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,X,X,X,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,X,X,X,X,X,X,X,X,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,X,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,X,X,X,X,X,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
     							};
            
-    private boolean o = true;
+    private boolean[][] walls5 = {{X,X,X,X,X,X,X,X,X,X,X,i,X,X,X,X,X,X,X,X,X,X,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,X,X,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,X,X,i,i,i,i,i,i,i,i,i,X,X,X,X,X},
+									{X,i,i,i,i,i,i,X,X,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,X,X,X,X,X,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,i,X,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,X},
+									{X,i,i,X,X,X,X,X,X,X,i,i,i,X,X,X,X,X,i,i,i,i,X},
+									{X,i,i,X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
+									{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,X,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
+									{X,i,i,X,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
+									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
+									};
+    private boolean[][] walls4 = {{X,X,X,X,X,X,X,X,X,X,X,i,X,X,X,X,X,X,X,X,X,X,X},
+    								{X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,X,X,X,i,i,X,X,X,X,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,X,X,X,X,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,X,X,X,X,X,X,i,i,i,i,i,i,i,i,i,i,X,X,X,X,X,X},
+    								{X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,X,i,i,X,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,X,X,X,i,i,X,X,X,X},
+    								{X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,X,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
+									};
+    private boolean[][] walls3 = {{X,X,X,X,X,X,X,X,X,X,X,i,X,X,X,X,X,X,X,X,X,X,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,X,X,X,X,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,X,X,X,X,X,X,X,X,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
+									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
+									};
 
                                 
     private int floor;                        
@@ -316,9 +405,21 @@ public class World
     public boolean[][] getWalls()
     {
     	
-    	if( floor%2 == 0 ){
+    	if( floor%10 == 1 || floor%10==6){
     	return walls;	
     	}
+    	else if( floor%10 == 2 || floor%10==7){
+        	return walls2;	
+        }
+    	else if( floor%10 == 3 || floor%10==8){
+        	return walls3;	
+        }
+    	else if( floor%10 == 4 || floor%10==9){
+        	return walls4;	
+        }
+    	else if( floor%10 == 5 || floor%10==0){
+        	return walls5;	
+        }
     	
     	else 
     		return walls;
@@ -337,15 +438,15 @@ public class World
     
     public Player getPlayerUnderEnemy()
     {
-        for(int i = 0; i < numEnemies-1; i++)
+        for(Enemy Enemy : Enemys)
         {
-        	player.takeDamage(1);
-            if(Enemys[i].getBody().intersects(player.getBody())){
-            	if(Enemys[i].stillAlive()==true){
+        	
+            if(Enemy.getBody().intersects(player.getBody())){
+            	if(Enemy.stillAlive()==true){
             		//Combat combat = new Combat(player,Enemys[i]);
-            		genericEnemy = Enemys[i];
+            		genericEnemy = Enemy;
             		isFighting = true;
-            		this.combat(Enemys[i]);
+            		this.combat(Enemy);
             	}
             return player;
             }
@@ -397,7 +498,7 @@ public class World
         return false;
     }
     private boolean wallAt(int row, int col)
-    { return row >= 0 && col >= 0 && row < ROW_COUNT && col < COL_COUNT && walls[row][col]; }
+    { return row >= 0 && col >= 0 && row < ROW_COUNT && col < COL_COUNT && getWalls()[row][col]; }
     public int getWidth()
     { return CELL_SIZE * COL_COUNT; }
     public int getHeight()

@@ -14,8 +14,8 @@ public class Player
         body = new Body(world, x, y, RADIUS);
         alive = true;
         hp = 50;
-        attack = 2;
-        defense = 2;
+        attack = 6;
+        defense =6;
     }
 
     public boolean isAlive() { return alive; }
