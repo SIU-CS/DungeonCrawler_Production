@@ -28,15 +28,15 @@ public class World
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
-                                 {X,X,X,X,i,X,X,X,i,i,i,i,i,i,i,X,X,X,i,X,X,X,X},
+                                 {X,X,X,i,i,X,X,X,i,i,i,i,i,i,i,X,X,X,i,i,X,X,X},
                                  {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
                                  {X,X,X,X,X,X,X,X,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
-                                 {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-                                 {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+                                 {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+                                 {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,X,X,X,X,X,X,X,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X},
@@ -45,9 +45,9 @@ public class World
                                  {X,X,X,X,X,X,X,X,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
-                                 {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-                                 {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+                                 {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+                                 {X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
                                  {X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
@@ -57,11 +57,11 @@ public class World
     private boolean[][] walls2 = {{X,X,X,X,X,X,X,X,X,X,X,i,X,X,X,X,X,X,X,X,X,X,X},
     								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,X,X,i,X},
-    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
-    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,X,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,X},
     								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
     								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
@@ -74,25 +74,25 @@ public class World
     								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
     								{X,i,i,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
     								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,X,X,X,X,X,X,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,X,X,X,X,X,X,X,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
     								{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
     							};
            
     private boolean[][] walls5 = {{X,X,X,X,X,X,X,X,X,X,X,i,X,X,X,X,X,X,X,X,X,X,X},
-									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,X,X,i,X},
-									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
-									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,X},
 									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,X,X,X,X,X,i,i,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,i,i,X},
 									{X,i,i,i,i,i,i,i,i,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
 									{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
 									{X,i,i,i,i,i,i,X,X,i,i,X,X,i,i,i,i,i,i,i,i,i,X},
@@ -103,15 +103,15 @@ public class World
 									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
 									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
 									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,i,X,X},
+									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,i,i,X},
 									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,X},
 									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,X},
 									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X,i,i,i,i,X},
 									{X,i,i,X,X,X,X,X,X,X,i,i,i,X,X,X,X,X,i,i,i,i,X},
 									{X,i,i,X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
+									{X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
 									{X,i,i,i,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
-									{X,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,X,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
 									{X,i,i,X,i,i,X,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X},
 									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
 									};
@@ -121,7 +121,7 @@ public class World
     								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
-    								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X},
     								{X,X,X,X,i,i,X,X,X,X,X,i,i,i,i,X,i,i,i,i,i,i,X},
@@ -141,36 +141,36 @@ public class World
     								{X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
     								{X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
     								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-    								{X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
+    								{X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
     								{X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
     								{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
 									};
     private boolean[][] walls3 = {{X,X,X,X,X,X,X,X,X,X,X,i,X,X,X,X,X,X,X,X,X,X,X},
 									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
 									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,X,X,X,X,X,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,X,X,X,X,X,X,X,X,X,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,X,X,X,X,X,X,X,X,X,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
-									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
+									{X,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,X,i,i,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,X,i,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,i,i,i,i,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,X,X,X,X,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,X,X,X,X,X,X,i,i,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,X,X,X,X,X,X,X,i,i,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,X,X,X,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X,X,X,i,i,X},
+									{X,i,i,i,i,i,X,i,i,i,i,i,i,i,i,i,i,X,X,X,i,i,X},
+									{X,i,i,i,i,i,X,X,X,X,X,X,X,X,X,i,i,X,X,X,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,X,X,X,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,X,X,X,i,i,X},
+									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,X,X,X,i,i,X},
 									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
 									{X,i,i,i,i,i,i,i,i,i,i,i,i,i,X,i,i,i,i,i,i,i,X},
 									{X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X}
@@ -199,10 +199,13 @@ public class World
         	if(rng<=75){
         		Enemys = new Enemy[1];
         		numEnemies = 1;
+        		if(rng>=50)
+        			player.setAttack(-5);
         	}
         	else if(rng>75){
         		Enemys = new Enemy[2];
         		numEnemies = 2;
+        		player.setDefense(-5);
         	}
         }
         else if(floor>25&&floor<=50)
@@ -210,14 +213,18 @@ public class World
         	if(rng<=50){
         		Enemys = new Enemy[1];
         		numEnemies = 1;
+        		if(rng>=25)
+        			player.setAttack(-1);
         	}
         	else if(rng>50&&rng<=75){
         		Enemys = new Enemy[2];
         		numEnemies = 2;
+        		player.setDefense(-1);
         	}
         	else if(rng>75){
         		Enemys = new Enemy[3];
         		numEnemies = 3;
+        		player.setAttack(-1);
         	}
         }
         else if(floor>50&&floor<=75)
@@ -225,18 +232,22 @@ public class World
         	if(rng<=25){
         		Enemys = new Enemy[1];
         		numEnemies = 1;
+        		player.setAttack(-1);
         	}
         	else if(rng>25&&rng<=50){
         		Enemys = new Enemy[2];
         		numEnemies = 2;
+        		player.setDefense(-1);
         	}
         	else if(rng>50&&rng<=75){
         		Enemys = new Enemy[3];
         		numEnemies = 3;
+        		player.setAttack(1);
         	}
         	else{
         		Enemys = new Enemy[4];
         		numEnemies = 4;
+        		player.setDefense(1);
         	}
         }
         else if(floor>75&&floor<=100)
@@ -244,18 +255,23 @@ public class World
         	if(rng<=25){
         		Enemys = new Enemy[2];
         		numEnemies = 2;
+        		player.setAttack(1);
         	}
         	else if(rng>25&&rng<=50){
         		Enemys = new Enemy[3];
         		numEnemies = 3;
+        		player.setDefense(1);
         	}
         	else if(rng>50&&rng<=75){
         		Enemys = new Enemy[4];
         		numEnemies = 4;
+        		player.setAttack(2);
         	}
+        	
         	else {
         		Enemys = new Enemy[5];
         		numEnemies = 5;
+        		player.setDefense(2);
         	}
         }
         else if(floor>100)

@@ -141,8 +141,11 @@ public class GameWindow extends JFrame
         private void paintBackground(Graphics g)
         {
             Dimension size = getSize();
-            g.setColor(Color.black);
-            g.fillRect(0, 0, size.width, size.height);
+            ImageIcon pImg = new ImageIcon("Background.png");
+        	Image sprite = pImg.getImage();
+        	g.drawImage(sprite, 0, 0, null);
+            //g.setColor(Color.black);
+            //g.fillRect(0, 0, size.width, size.height);
         }
 
         
@@ -161,6 +164,22 @@ public class GameWindow extends JFrame
             int playerHeight = fm.getAscent();
             g.setColor(Color.blue);
             g.drawString(message, 810, 120);
+            
+            int playerAttack = world.getPlayer().getAttack();
+            String message3 = "Player Attack: " + playerAttack;
+            g.setFont(new Font("SansSerif", Font.BOLD, 20));
+            int playerAttackWidth = fm.stringWidth(message3);
+            int playerAttackHeight = fm.getAscent();
+            g.setColor(Color.blue);
+            g.drawString(message3, 810, 250);
+            
+            int playerDefense = world.getPlayer().getDefense();
+            String message4 = "Player Defense: " + playerDefense;
+            g.setFont(new Font("SansSerif", Font.BOLD, 20));
+            int playerDefenseWidth = fm.stringWidth(message4);
+            int playerDefenseHeight = fm.getAscent();
+            g.setColor(Color.blue);
+            g.drawString(message4, 810, 280);
         	
             int enemyHealth;
             if(world.currentlyFighting()==true)
@@ -218,6 +237,8 @@ public class GameWindow extends JFrame
 
         private void paintPlayer(Graphics g)
         {
+        	ImageIcon pImg = new ImageIcon("Player.png");
+        	Image sprite = pImg.getImage();
             Player player = world.getPlayer();
             if (player == null)
                 return;
@@ -226,8 +247,9 @@ public class GameWindow extends JFrame
             int x = body.getX();
             int y = body.getY();
             int radius = body.getRadius();
-            g.setColor(Color.blue);
-            g.fillOval(x-radius, y-radius, radius*2, radius*2);
+            g.drawImage(sprite, x, y, null);
+            //g.setColor(Color.blue);
+            //g.fillOval(x-radius, y-radius, radius*2, radius*2);
 
             
 
@@ -252,17 +274,22 @@ public class GameWindow extends JFrame
 
             for (Enemy Enemy : Enemys)
             {
+            	ImageIcon eImg = new ImageIcon("Enemy.png");
+            	Image sprite = eImg.getImage();
                 int x = Enemy.getBody().getX();
                 int y = Enemy.getBody().getY();
                 int radius = Enemy.getBody().getRadius();
                 Direction direction = Enemy.getBody().getDirection();
                 if(Enemy.stillAlive()==true)
                 {
-                	g.setColor(Color.GREEN);
+                	g.drawImage(sprite, x, y, null);
+                	//g.setColor(Color.GREEN);
+                	//g.fillOval(x-radius, y-radius, radius*2, radius*2);
+                    //g.setClip(x-radius, y-radius, radius*2, radius*2);
                 }
                 else g.setColor(Color.RED);
-                g.fillOval(x-radius, y-radius, radius*2, radius*2);
-                g.setClip(x-radius, y-radius, radius*2, radius*2);
+                //g.fillOval(x-radius, y-radius, radius*2, radius*2);
+                //g.setClip(x-radius, y-radius, radius*2, radius*2);
 
                 
                 g.setClip(null);
